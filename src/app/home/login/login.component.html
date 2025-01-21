@@ -1,0 +1,67 @@
+<div class="card my-auto container-fluid">
+    <div class="container p-1 mx-auto">
+        <h1 class="text-center"> 
+            Let's know about you!!
+        </h1>
+        <div class="card mx-auto" style="border-radius: none; border: none;">
+            <form #popup="ngForm" (ngSubmit)="popup.form.valid" novalidate> 
+                <p >
+                    <mat-form-field appearance="outline" class="m-2" style="width: 100%;" >
+                        <mat-label>*What is your Name?</mat-label>
+                        <input matInput placeholder="Name" [(ngModel)]="detail.name" name="name" id="name" required="true">
+                        <mat-hint style="color: red;"> Name is required!</mat-hint>
+    
+                    </mat-form-field>
+                    <mat-form-field appearance="outline" class="m-2" style="width: 100%;" >
+                        <mat-label>*Where are you From?</mat-label>
+                        <input matInput placeholder="Location"  [(ngModel)]="detail.location" name="location" id="location" required="true">
+                        <mat-hint style="color: red;">Location is required!</mat-hint>
+                    </mat-form-field>
+                </p>
+                <p >
+                    <mat-form-field appearance="outline" class="m-2" style="width: 100%;" >
+                        <mat-label>*Tell us your Email Id/Address?</mat-label>
+                        <input matInput placeholder="demo@gmail.com"[(ngModel)]="detail.email" name="email" id="email" required="true">
+                        <mat-hint style="color: red;">Email is required!</mat-hint>
+                    </mat-form-field>
+                    <mat-form-field appearance="outline" class="m-2" style="width: 100%;">
+                        <mat-label>*Tell us your Phone/Mobile number?</mat-label>
+                        <input matInput placeholder="+91 0000000000"  [(ngModel)]="detail.phone" name="phone" id="phone" required="true">
+                        <mat-hint style="color: red;">Phone number is required!</mat-hint>
+                    </mat-form-field>
+                </p>
+    
+                <p>
+                    <mat-form-field appearance="outline" style="width: 100%;" >
+                        <mat-label>*How you find us?</mat-label>
+                        <mat-select [(ngModel)]="detail.find" name="find" id="find" required="false">
+                            <mat-option>None</mat-option>
+                            <mat-option value="Instagram">Instagram
+    
+                            </mat-option>
+                            <mat-option value="Facebook">Facebook</mat-option>
+                            <mat-option value="LinkedIn">LinkedIn</mat-option>
+                        </mat-select>
+                    </mat-form-field>
+                    
+                </p>
+                <div class="mx-auto justify-content-center align-item-center text-align-center">
+                    <button (click)="submit(popup)" [disabled]="popup.invalid" mat-fab extended class="protected-state-layer-color" style="margin: 10px;">
+                        
+                        Submit
+                    </button>
+                    <button (click)="close()" color="danger" mat-fab extended class="protected-state-layer-color" style="margin: 10px;">
+                        
+                        Exit
+                    </button>
+                </div>
+            </form>
+            
+            
+
+
+
+        </div>
+
+    </div>
+</div>

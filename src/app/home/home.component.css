@@ -1,0 +1,326 @@
+ion-content {
+    --background: #000;
+  }
+  
+  .square {
+    position: absolute;
+    left: 0;
+    top: 30%;
+    border-radius: 20px;
+    left: -80px;
+    height: 10rem;
+    width: 10rem;
+    background-color: rgb(6, 6, 187);
+    transform: rotate(45deg);
+    z-index: -1;
+  }
+  
+  .square1 {
+    position: absolute;
+    left: -80px;
+    top: 29%;
+    border-radius: 20px;
+  
+    height: 11rem;
+    width: 11rem;
+    border: 3px dotted rgb(6, 6, 187);
+    transform: rotate(45deg);
+    animation: rotate 5s linear infinite;
+    z-index: -1;
+  }
+  
+  .circle {
+    position: absolute;
+    left: 180px;
+    top: 50%;
+    border-radius: 50%;
+    background-color: rgb(6, 6, 187);
+    height: 8rem;
+    width: 11rem;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+    /* Adds shadow */
+  }
+  
+  @keyframes rotate {
+    from {
+      transform: rotate(0deg);
+    }
+  
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  
+  
+  .head {
+  
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 48px;
+    font-weight: 800;
+    letter-spacing: 3px;
+    line-height: 1.2;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+  
+  }
+  
+  .head2 {
+  
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 28px;
+    text-align: right;
+    font-weight: 800;
+    letter-spacing: 3px;
+    line-height: 1.2;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+  
+  }
+  
+  .head2p {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 20px;
+    text-align: right;
+    font-weight: 500;
+    letter-spacing: 1.5;
+    line-height: 1.5;
+    color: rgb(255, 255, 255);
+  
+  }
+  
+  .head3p {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 20px;
+    text-align: left;
+    font-weight: 400;
+    letter-spacing: 1;
+    line-height: 1.5;
+    color: rgb(255, 255, 255);
+  
+  }
+  
+  .hshape {
+    height: 5px;
+    max-width: 50%;
+    margin-left: 50%;
+    border-radius: 20px;
+    background-color: yellow;
+  
+  }
+  
+  .h1shape {
+    height: 5px;
+    max-width: 50%;
+    border-radius: 20px;
+    background-color: yellow;
+  }
+  
+  .img1 {
+  
+    float: left;
+    border-radius: 100px 100px 100px 100px;
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .course {
+  
+    float: left;
+    max-width: 100%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .course1 {
+    position: relative;
+    bottom: 170%;
+    left: 30%;
+    max-width: 15%;
+    height: auto;
+    z-index: -1;
+    animation: moveUpDown1 2s ease-in-out infinite;
+  }
+  
+  @keyframes moveUpDown1 {
+    0% {
+      transform: translateX(0);
+    }
+  
+    50% {
+      transform: translateX(-5px);
+      /* Move up by 20px */
+    }
+  
+    100% {
+      transform: translateX(0);
+      /* Return to original position */
+    }
+  }
+  
+  .img1a {
+  
+    float: left;
+    border-radius: 100px 100px 100px 100px;
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .img2 {
+    position: absolute;
+  
+    right: 70%;
+    max-width: 30%;
+    height: auto;
+    z-index: -1;
+  }
+  
+  .logo {
+    max-width: 100%;
+    height: auto;
+  
+  }
+  
+  .navbar-toggler {
+    float: left;
+  }
+  
+  .card {
+    background-color: #fc5151;
+    transition: all 0.5s;
+    height: 100%;
+  
+  }
+  
+  .card:hover {
+    background-color: #5170fc;
+    transform: translateY(-10px);
+  }
+  
+  .icon {
+    max-width: 100%;
+  }
+  
+  .cardi {
+    color: #fff;
+  }
+  
+  .button {
+    padding: 10px;
+    border-radius: 20px;
+    border: 1px solid brown;
+  }
+  
+  .button:hover {
+    background-color: blue;
+    color: #fff;
+  }
+  
+  .imgcard {
+    max-width: 100%;
+    margin-top: 15px;
+  }
+  
+  .h2shape {
+    height: 5px;
+    max-width: 20%;
+    border-radius: 20px;
+    background-color: yellow;
+  
+  }
+  
+  
+  .slider-container1 {
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    /* Enables smooth scrolling on iOS */
+    scrollbar-width: thin;
+    /* For Firefox */
+    scrollbar-color: #888 #eee;
+    /* For Firefox */
+    background-color: none;
+  
+    margin-top: 80px;
+    padding: 2vh;
+  
+  
+    height: 100%;
+  
+  }
+  
+  .slider1 {
+    display: flex;
+    gap: 6px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .slide1 {
+  
+    border-radius: 20px;
+    background-color: #fff;
+    flex: 0 0 auto;
+    margin-top: auto;
+    cursor: pointer;
+    scroll-snap-align: start;
+    /* Aligns each slide to the start of the container */
+    transition: all 0.2s;
+    width: 100px;
+    padding: 10px;
+    z-index: 1;
+  
+    /* Adjusts card width */
+  }
+  
+  .slide1:hover {
+    transform: scale(1.1);
+    z-index: 2;
+  }
+  
+  /* // marquee what's new----------------------- */
+  .marquee {
+    overflow: hidden;
+    /* Hides overflowing content */
+    white-space: nowrap;
+    /* Prevents content from wrapping */
+    box-sizing: border-box;
+    width: 100%;
+    /* Full width */
+    background: #f0f0f0;
+    /* Optional background color */
+    padding: 10px;
+    /* Optional padding */
+    position: relative;
+    /* Ensures proper positioning */
+  }
+  
+  .marquee-content {
+    display: inline-block;
+    /* Allows smooth scrolling */
+    animation: marquee 10s linear infinite;
+    /* Animation properties */
+    font-size: 1.2rem;
+    /* Adjust text size */
+    color: #333;
+    /* Text color */
+  }
+  
+  /* Animation for marquee */
+  @keyframes marquee {
+    from {
+      transform: translateX(100%);
+      /* Start fully outside the right edge */
+    }
+  
+    to {
+      transform: translateX(-100%);
+      /* End fully outside the left edge */
+    }
+  }
+  
+  /* Pause animation on hover of the entire marquee section */
+  .marquee:hover .marquee-content {
+    animation-play-state: paused;
+  }

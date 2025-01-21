@@ -1,0 +1,24 @@
+
+
+
+.navbar {
+
+    width: 100%;
+    background-color: #810881;
+    border-radius: 40px;
+    margin: 5px;
+    max-width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    z-index: 1;
+    transition: all 0.5s ease;
+}
+
+.text {
+    color: #fff;
+}
+a{
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 600;
+}
+
