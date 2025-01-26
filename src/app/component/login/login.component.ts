@@ -6,8 +6,7 @@ import { MatSelectModule } from '@angular/material/select';
 import { MatButtonModule } from '@angular/material/button';
 import { MatDialog, MatDialogModule } from '@angular/material/dialog'
 import { FormsModule, NgForm } from '@angular/forms';
-import { details } from '../../modal/contact';
-
+import { details } from '../modal/contact';
 @Component({
   selector: 'app-login',
   imports: [MatFormFieldModule, MatInputModule, MatIconModule, MatSelectModule, MatButtonModule,  MatDialogModule,
@@ -45,7 +44,7 @@ export class LoginComponent {
         Found us via: ${form.value.find}
        
       `;
-      const phoneNumber = '918840876120'; // Replace with recipient's WhatsApp number
+      const phoneNumber = '918787086928'; // Replace with recipient's WhatsApp number
       const encodedMessage = encodeURIComponent(message);
       const url = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
       window.open(url, '_blank');

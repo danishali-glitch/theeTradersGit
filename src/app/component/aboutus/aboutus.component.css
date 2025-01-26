@@ -1,0 +1,147 @@
+.imglogo {
+    position: absolute;
+    max-width: 20%;
+    left: 5%;
+}
+
+h1 {
+    color: #000;
+    font-family: Arial Rounded MT Bold;
+    font-weight: 800;
+    line-height: 1.5;
+}
+
+.h1shape {
+    height: 5px;
+    max-width: 50%;
+    border-radius: 20px;
+    background-color: yellow;
+    animation: moveUpDown1 2s ease-in-out infinite;
+}
+
+@keyframes moveUpDown1 {
+    0% {
+        transform: translateX(0);
+    }
+
+    50% {
+        transform: translateX(20px);
+        /* Move up by 20px */
+    }
+
+    100% {
+        transform: translateX(0);
+        /* Return to original position */
+    }
+}
+
+ion-icon {
+    font-size: 25px;
+}
+
+.rep {
+    transform: translateX(-100%);
+    opacity: 0;
+    max-width: 100%;
+    /* Animation */
+    animation: slideIn1 2.5s ease-out forwards;
+}
+
+@keyframes slideIn1 {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.rep1 {
+    transform: translateX(100%);
+    opacity: 0;
+    max-width: 100%;
+    /* Animation */
+    animation: slideIn2 2.5s ease-out forwards;
+}
+
+@keyframes slideIn2 {
+    0% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.line {
+    height: 2px;
+    width: 100%;
+    background-color: #ffffff;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.row1 {
+    transform: translateY(100%);
+    opacity: 0;
+
+    /* Animation */
+    animation: row1 2.5s ease-out forwards;
+}
+
+@keyframes row1 {
+    0% {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.row2 {
+    transform: translateY(100%);
+    opacity: 0;
+
+    /* Animation */
+    animation: row2 2.5s ease-out forwards;
+}
+
+@keyframes row2 {
+    0% {
+        transform: translateY(0);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(100%);
+        opacity: 1;
+    }
+}
+
+
+
+
+.imge1 {
+    max-width: 30%;
+}
+
+.h {
+    background-color: #ffc400;
+    transition: all 0.5s;
+    height: 100%;
+    cursor: pointer;
+}
+
+.h:hover {
+    background-color: #00ffdd;
+    transform: translateY(-10px);
+}

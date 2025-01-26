@@ -1,8 +1,7 @@
 import { Component } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
-
+import { LoginComponent } from '../login/login.component';
 import { Router } from '@angular/router';
-import { LoginComponent } from '../home/login/login.component';
 
 
 @Component({

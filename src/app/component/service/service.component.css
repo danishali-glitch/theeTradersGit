@@ -1,0 +1,78 @@
+
+.plus-sign {
+    position: relative;
+    width: 40px;
+    height: 5px;
+    background-color: #ffffff;
+    animation: rotate 12s linear infinite;
+}
+
+.plus-sign::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 5px;
+    height: 40px;
+    background-color: #ffffff;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+h1 {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 800;
+    color: #fff;
+}
+
+h2 {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 500;
+    font-size: 24px;
+}
+
+.card1 {
+    background-color: #fff;
+    padding: 5px;
+   height: 320px;
+   cursor: pointer;
+
+   
+
+    transition: all 200ms ease-in-out;
+}
+i {
+    font-size: 100px;
+}
+
+.card1:hover {
+    background-color: #044ff1;
+    transform: translateY(-7px);
+
+    i {
+        color: #fff;
+    }
+
+    h2 {
+        color: #fff;
+    }
+
+    p {
+        color: #fff;
+    }
+}
+
+.card2 {
+    background-color: transparent;
+    border: 3px solid #3498db;
+}
+

@@ -1,0 +1,212 @@
+<div class="gap">
+
+</div>
+<div class="container-fluid p-5 " style="background-color: #fcba03;">
+    <h1 class="text-center">
+        Contact us
+    </h1>
+
+
+</div>
+
+<div class="gap"></div>
+
+
+<div class="container-fluid mb-3" style="color: #fff;">
+    <div class="row">
+        <div class="col-md-6 p-3">
+            <p style="color: #eeff00; font-family: Georgia, 'Times New Roman', Times, serif; font-weight: 500;">
+                CONTACT DETAILS
+            </p>
+            <h2 style="color: #ffffff; font-family: Georgia, 'Times New Roman', Times, serif; font-weight: 800;">
+                Get in Touch
+            </h2>
+            <p style="color: #ffffff; ">
+                Have any query ? or want to know more ?<br>
+                Contact us and we will be happy to help.
+            </p>
+
+            <div class="row m-2">
+                <div class="col-md-3">
+                    <div class="card card1">
+                        <i class="fa-solid fa-location-dot mx-auto"></i>
+                    </div>
+                </div>
+                <div class="col-md-9">
+                    <h2 style="font-family: Georgia, 'Times New Roman', Times, serif; font-weight: 800;">
+                        Location
+                    </h2>
+                    <p>
+                        Lakhimpur-Kheri (Uttar Pradesh)<br>
+                        Sitapur (Uttar Pradesh)<br>
+                        Lucknow (Uttar Pradesh) <br>
+                        Siwan (Bihar) <br>
+
+                    </p>
+                </div>
+            </div>
+            <div class="row m-2">
+                <div class="col-md-3">
+                    <div class="card card1 ">
+                        <i class="fa-solid fa-envelope-open-text mx-auto"></i>
+                    </div>
+                </div>
+                <div class="col-md-9">
+                    <h2 style=" font-family: Georgia, 'Times New Roman', Times, serif; font-weight: 800;">
+                        E-mail
+                    </h2>
+                    <p>
+                        <a style="color: #ffffff;"
+                            href="mailto:thetraders009@gmail.com">theetraders009&commat;gmail.com</a> <br>
+
+                    </p>
+                </div>
+            </div>
+            <div class="row m-2">
+                <div class="col-md-3">
+                    <div class="card card1">
+                        <i class="fa-solid fa-phone mx-auto" ></i>
+                    </div>
+                </div>
+                <div class="col-md-9">
+                    <h2 style="font-family: Georgia, 'Times New Roman', Times, serif; font-weight: 800;">
+                        Contact
+                    </h2>
+                    <p>
+                        <a style="color: #ffffff;" href="tel:+918787086928">+91 8787086928</a> <br>
+                        <a style="color: #ffffff;" href="tel:+917084193532">+91 7084193532</a> <br>
+
+                    </p>
+                </div>
+            </div>
+            <div class="row m-2">
+                <div class="col-md-3">
+                    <div class="card card1">
+                        <i class="fa-solid fa-stopwatch mx-auto"></i>
+                    </div>
+                </div>
+                <div class="col-md-9">
+                    <h2 style="font-family: Georgia, 'Times New Roman', Times, serif; font-weight: 800;">
+                        Hours of Training
+                    </h2>
+                    <p>
+                        Monday to Thursday : 09:00 am to 09:00 pm
+                    </p>
+                </div>
+            </div>
+
+        </div>
+        <div class="col-md-6 mb-4">
+            <div class="card card2">
+                <h2 class="text-center"
+                    style="color: #750000; font-family: Georgia, 'Times New Roman', Times, serif; font-weight: 800;">
+                    Ready to get Started
+                </h2>
+                <p class="text-center"
+                    style="color: #2b0303; font-family: Georgia, 'Times New Roman', Times, serif; font-weight: 500;">
+                    Please Fill the Form below
+                </p>
+              
+                <div class="card mx-auto" style="border-radius: none; border: none;">
+                    <form #myForm="ngForm" (ngSubmit)="myForm.form.value" novalidate>
+                        <p >
+                            <mat-form-field appearance="outline" class="m-2" style="width: 100%;" >
+                                <mat-label>*What is your Name?</mat-label>
+                                <input matInput placeholder="Name" [(ngModel)]="detail.name" name="name" id="name" required="true">
+                                <mat-hint style="color: red;"> Name is required!</mat-hint>
+            
+                            </mat-form-field>
+                            <mat-form-field appearance="outline" class="m-2" style="width: 100%;" >
+                                <mat-label>*Where are you From?</mat-label>
+                                <input matInput placeholder="Location"  [(ngModel)]="detail.location" name="location" id="location" required="true">
+                                <mat-hint style="color: red;">Location is required!</mat-hint>
+                            </mat-form-field>
+                        </p>
+                        <p >
+                            <mat-form-field appearance="outline" class="m-2" style="width: 100%;" >
+                                <mat-label>*Tell us your Email Id/Address?</mat-label>
+                                <input matInput placeholder="demo@gmail.com"[(ngModel)]="detail.email" name="email" id="email" required="true">
+                                <mat-hint style="color: red;">Email is required!</mat-hint>
+                            </mat-form-field>
+                            <mat-form-field appearance="outline" class="m-2" style="width: 100%;">
+                                <mat-label>*Tell us your Phone/Mobile number?</mat-label>
+                                <input matInput placeholder="+91 0000000000"  [(ngModel)]="detail.phone" name="phone" id="phone" required="true">
+                                <mat-hint style="color: red;">Phone number is required!</mat-hint>
+                            </mat-form-field>
+                        </p>
+            
+                        <p>
+                            <mat-form-field appearance="outline" style="width: 100%;" >
+                                <mat-label>*How you find us?</mat-label>
+                                <mat-select [(ngModel)]="detail.find" name="find" id="find" required="false">
+                                    <mat-option>None</mat-option>
+                                    <mat-option value="Instagram">Instagram
+            
+                                    </mat-option>
+                                    <mat-option value="Facebook">Facebook</mat-option>
+                                    <mat-option value="LinkedIn">LinkedIn</mat-option>
+                                </mat-select>
+                            </mat-form-field>
+                            
+                        </p>
+                        <p>
+                            <mat-form-field appearance="outline" style="width: 100%;"  >
+                                <mat-label>*How much capital you have to trade with?</mat-label>
+                                <mat-select  [(ngModel)]="detail.capital" name="capital" id="capital" required="false">
+                                    <mat-option>None</mat-option>
+                                    <mat-option value="0-50,000">0 - 50,000
+            
+                                    </mat-option>
+                                    <mat-option value="50,000-1,00,000">50,000 - 1,00,000</mat-option>
+                                    <mat-option value="1,00,000-5,00,000">1,00,000 - 5,00,000</mat-option>
+                                    <mat-option value="More_than_5,00,000">More than 5,00,000</mat-option>
+    
+                                </mat-select>
+                            </mat-form-field>
+                        </p>
+                        <p>
+                            <mat-form-field appearance="outline" style="width: 100%;"  >
+                                <mat-label>*How Trading experience do you have?</mat-label>
+                                <mat-select  [(ngModel)]="detail.experience" name="experience" id="experience" required="false">
+                                    <mat-option>None</mat-option>
+                                    <mat-option value="0_to_1_year">0 to 1 year
+            
+                                    </mat-option>
+                                    <mat-option value="1_year_to_3_year">1 year to 3 year</mat-option>
+                                    <mat-option value="3_year_to_5_year">3 year to 5 year</mat-option>
+                                    <mat-option value="More_than_5_year">More than 5 year</mat-option>
+    
+                                </mat-select>
+                            </mat-form-field>
+                        </p>
+    
+            
+                        <div class="mx-auto justify-content-center align-item-center text-align-center">
+                            <button (click)="submit(myForm)" [disabled]="myForm.invalid"  mat-fab extended class="protected-state-layer-color" style="margin: 10px;">
+                                
+                                Submit
+                            </button>
+                           
+                        </div>
+                    </form>
+                           
+            </div>
+        </div>
+    </div>
+</div>
+<iframe
+    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14097.316752746587!2d80.7673451!3d27.953203!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399f3557a5bb7e33%3A0xd58594b495cc7e3e!2sTHEETRADERS%20ACADEMY!5e0!3m2!1sen!2sin!4v1733337590092!5m2!1sen!2sin"
+    width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+    referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+
+
+<img class="img3" src="assets/logo/shape2.png" alt="">
+
+<img class="img4" src="assets/logo/shape3.png" alt="">
+<img class="img5" src="assets/logo/shape4.png" alt="">
+<img class="img6" src="assets/logo/shape2.png" alt="">
+<img class="img7" src="assets/logo/shape3.png" alt="">
+<img class="img8" src="assets/logo/shape5.png" alt="">
+<img class="img9" src="assets/logo/shape5.png" alt="">
+<app-footer></app-footer>

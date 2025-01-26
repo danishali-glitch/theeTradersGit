@@ -1,0 +1,31 @@
+<div class="container-fluid">
+   
+      <div class="row">
+        <div class="col-md-3 mt-3" *ngFor="let data of photos">
+          <div class="card">
+           <div class="card card1">
+            <div class=" ">
+                <img class="card-img" [src]="data.imag" alt="">
+              </div>
+           </div>
+             
+          
+            <h3 class="text-center">
+              {{data.title}}
+            </h3>
+          </div>
+        </div>
+      </div>
+   
+  </div>
+
+
+  <img class="img3" src="assets/logo/shape2.png" alt="">
+
+  <img class="img4" src="assets/logo/shape3.png" alt="">
+  <img class="img5" src="assets/logo/shape4.png" alt="">
+  <img class="img6" src="assets/logo/shape2.png" alt="">
+  <img class="img7" src="assets/logo/shape3.png" alt="">
+  <img class="img8" src="assets/logo/shape5.png" alt="">
+  <img class="img9" src="assets/logo/shape5.png" alt="">
+  <app-footer></app-footer>

@@ -1,0 +1,46 @@
+.card-image {
+    width: 100%;
+    /* Full width of the card */
+    height: 200px;
+    /* Set a fixed height */
+    object-fit: cover;
+    /* Ensures the image fills and crops as necessary */
+    border-radius: 8px;
+    /* Optional: match the card's corner radius */
+}
+
+.card1{
+    width: 100%;
+    /* Full width of the column */
+    height: 300px;
+    /* Fixed height for consistency */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    overflow: hidden;
+    /* Remaining 30% for content */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+.card{
+    background-color: rgba(243, 32, 127, 0.6);
+}
+
+h3{
+    color: #fff;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 500;
+}
+
+.card1-img{
+    width: 100%;
+    /* Full width of the card */
+    height: 200px;
+    /* Set a fixed height */
+    object-fit: cover;
+    /* Ensures the image fills and crops as necessary */
+    border-radius: 8px;
+    /* Optional: match the card's corner radius */
+}
